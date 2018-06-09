@@ -1,0 +1,108 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+img{
+    width: 100%;
+    vertical-align: middle;
+}
+input{
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+}
+ul{
+    list-style: none;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+    line-height: 0;
+  }
+  html,body{
+    //   background-color: red;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+       align-items: stretch;//设置侧轴子项  不写也行
+  }
+  header{
+      height: 44px;
+    //   background-color: pink;
+      display: flex;
+      justify-content: space-around;
+      a{
+          width: 40px;
+          text-align: center;
+          line-height: 44px;
+       
+      }
+      .search{
+        flex:1;
+        padding: 5px;
+        position: relative;
+        span{
+            position: absolute;
+            top:15px;
+            left:5px;
+        }
+        input{
+            text-indent: 20px;
+            background: #f6f6f6;
+            border-radius: 20px;
+        }
+      }
+     
+  }
+  .container{
+    //   background-color: aqua;
+      //header标签设置高度如果这不写flex=1,container就会继承body高度,就会挤压header,那么header设置高度就没意义了.
+      flex:1;
+      display: flex;
+      .left{
+        width: 85px;
+        overflow: hidden;
+        font-size: 14px;
+        ul{
+            li{
+                height: 45px;
+            text-align: center;
+            line-height: 45px;
+            background-color: #f6f6f6;
+                
+            }
+            .active{
+                color: red;
+            }
+        }
+        
+          }
+      .right{
+        flex: 1;
+        overflow: hidden;
+        div{
+            .goods{
+                display: flex;
+                flex-wrap: wrap;
+                // justify-content: space-between;
+                a{
+                //    float: left;
+                    // display: block;
+                    width: 33.3%;
+                }
+            }
+        }
+    
+      }
+  }
+
