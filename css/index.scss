@@ -90,6 +90,10 @@ nav{
         >span{
             background-color: #000000;
             color: #fff;
+            &:nth-child(3n){
+                background-color:#fff;
+                color: #000;
+            }
         }
     }
    }

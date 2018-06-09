@@ -99,6 +99,11 @@ nav a p {
   color: #fff;
 }
 
+.sec_kill .kill_title .timer > span:nth-child(3n) {
+  background-color: #fff;
+  color: #000;
+}
+
 .sec_kill .kill_content {
   display: flex;
   justify-content: space-around;
